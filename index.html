@@ -12,50 +12,66 @@
     }
     body {
       font-family: "Segoe UI", sans-serif;
-      background: #f3f9fa;
       color: #004D65;
+      background: #f3f9fa;
       line-height: 1.6;
     }
+
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 0 20px;
     }
+
     header {
-      background: #ffffff;
+      background: rgba(255, 255, 255, 0.9);
       padding: 20px 0;
+      text-align: center;
       border-bottom: 1px solid #8EC1CC;
+      backdrop-filter: blur(6px);
     }
+
     .logo {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 600;
     }
+
     nav {
       margin-top: 10px;
     }
+
     nav a {
-      margin-right: 20px;
+      margin: 0 15px;
       text-decoration: none;
       color: #2E6F80;
       font-weight: 500;
     }
+
     nav a:hover {
       color: #004D65;
     }
+
     #hero {
-      background: linear-gradient(to right, #004D65, #2E6F80);
+      background: url("istockphoto-502426696-612x612.jpg") no-repeat center center fixed;
+      background-size: cover;
       color: white;
-      padding: 100px 0 60px;
+      padding: 100px 20px;
       text-align: center;
     }
+
     #hero h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
     }
+
     #hero p {
       font-size: 1.1rem;
-      margin-bottom: 30px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     }
+
     .button-group {
       display: flex;
       flex-direction: column;
@@ -63,11 +79,13 @@
       justify-content: center;
       align-items: center;
     }
+
     @media (min-width: 640px) {
       .button-group {
         flex-direction: row;
       }
     }
+
     .btn {
       font-size: 1.1rem;
       padding: 0.75rem 2rem;
@@ -78,53 +96,52 @@
       min-width: 160px;
       text-align: center;
     }
+
     .btn-gold {
       background: linear-gradient(to right, #FFD700, #FFC700);
       color: #002F3D;
       box-shadow: 0 2px 4px rgba(255, 215, 0, 0.4);
       border: none;
     }
+
     .btn-gold:hover {
       opacity: 0.9;
     }
+
     .btn-white {
       background: #ffffff;
       color: #002F3D;
       border: 1px solid #d4d4d4;
       box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
+
     .btn-white:hover {
       background: #f6f6f6;
     }
+
     .content-section {
       padding: 60px 0;
-      border-bottom: 1px solid #e2e8f0;
-    }
-    .content-section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-    }
-    .content-section p,
-    .content-section ul {
-      color: #2E6F80;
-      font-size: 1rem;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    footer {
-      background: #ffffff;
-      text-align: center;
-      padding: 20px 0;
-      color: #2E6F80;
-      border-top: 1px solid #8EC1CC;
-      font-size: 0.9rem;
+      background: white;
     }
 
-    /* CARD STYLES */
+    .content-section h2 {
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .grid-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    @media (min-width: 768px) {
+      .grid-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
     .card {
       background: rgba(255, 255, 255, 0.8);
       backdrop-filter: blur(6px);
@@ -132,16 +149,18 @@
       padding: 2rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       transition: box-shadow 0.4s ease;
-      margin-bottom: 40px;
     }
+
     .card:hover {
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     }
+
     .card-content {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
+
     .icon-wrapper {
       width: 48px;
       height: 48px;
@@ -152,11 +171,13 @@
       justify-content: center;
       margin-bottom: 1.5rem;
     }
+
     .icon {
       width: 24px;
       height: 24px;
       color: #004D65;
     }
+
     .card h3 {
       font-family: serif;
       font-size: 1.5rem;
@@ -164,10 +185,24 @@
       color: #004D65;
       margin-bottom: 0.75rem;
     }
+
     .card p {
       color: #3c4b55;
       font-size: 1rem;
       line-height: 1.6;
+    }
+
+    #contact p {
+      text-align: center;
+    }
+
+    footer {
+      background: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      color: #2E6F80;
+      border-top: 1px solid #8EC1CC;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -195,31 +230,53 @@
     </div>
   </section>
 
-  <section id="about" class="content-section">
-    <div class="container">
-      <h2>Who We Are</h2>
-      <p>LW Partners is a low-profile group of partners with deep entrepreneurial experience. We invest in companies across the United States and Latin America through technology development and strategic acquisitions.</p>
-    </div>
-  </section>
-
   <section id="focus" class="content-section">
     <div class="container">
       <h2>Our Focus</h2>
+      <div class="grid-cards">
 
-      <div class="card">
-        <div class="card-content">
-          <div class="icon-wrapper">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-              </path>
-            </svg>
+        <div class="card">
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3>Technology Development</h3>
+            <p>We develop technology companies from inception, providing capital, expertise, and strategic guidance to transform innovative ideas into market-leading enterprises.</p>
           </div>
-          <h3>Entrepreneurial Acquisition</h3>
-          <p>We partner with talented entrepreneurs to acquire and operate established businesses, bringing fresh perspective and entrepreneurial energy to drive growth.</p>
         </div>
-      </div>
 
-      <ul>
-        <li><strong>ETA:</strong> We back entrepreneurs to acquire and operate enduring businesses.</li>
-        <li><strong>Technology:</strong> We support new ventures from incepti
+        <div class="card">
+          <div class="card-content">
+            <div class="icon-wrapper">
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                </path>
+              </svg>
+            </div>
+            <h3>Entrepreneurial Acquisition</h3>
+            <p>We partner with talented entrepreneurs to acquire and operate established businesses, bringing fresh perspective and entrepreneurial energy to drive growth.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:contact@lwpartners.com">contact@lwpartners.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 LW Partners. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
