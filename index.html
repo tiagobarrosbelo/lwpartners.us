@@ -1,148 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LW Partners</title>
-  <style>
-    :root {
-      --primary: #004D65;
-      --secondary: #2E6F80;
-      --accent: #8EC1CC;
-      --bg: rgba(243, 249, 250, 0.85);
-      --white: #ffffff;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background: url('A_high-resolution_digital_photograph_captures_a_la.png') no-repeat center center fixed;
-      background-size: cover;
-      color: var(--primary);
-      line-height: 1.6;
-    }
-
-    .overlay {
-      background-color: var(--bg);
-      backdrop-filter: blur(2px);
-      min-height: 100vh;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-      border-bottom: 1px solid var(--accent);
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: var(--primary);
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: var(--secondary);
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    h2 {
-      font-size: 1.6rem;
-      color: var(--primary);
-      margin-top: 40px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1rem;
-      color: var(--secondary);
-      margin: 10px 0 25px;
-    }
-
-    blockquote {
-      font-style: italic;
-      color: var(--primary);
-      border-left: 4px solid var(--accent);
-      padding-left: 16px;
-      margin: 30px 0;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 40px 20px;
-      background-color: rgba(255, 255, 255, 0.8);
-      color: var(--secondary);
-      border-top: 1px solid var(--accent);
-    }
-
-    a {
-      color: var(--primary);
-      text-decoration: none;
-      border-bottom: 1px dotted var(--accent);
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.3rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>LW Partners</h1>
-      <p>Investing in exceptional companies across the United States and Latin America through technology development and entrepreneurial acquisition.</p>
-    </header>
+  <header>
+    <div class="container">
+      <h1 class="logo">LW Partners</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <section>
-      <h2>Our Investment Philosophy</h2>
-      <p>We partner with exceptional entrepreneurs to build and acquire companies that create lasting value in dynamic markets.</p>
+  <section id="hero">
+    <div class="container">
+      <h2>Investing in exceptional companies in the US and abroad</h2>
+      <p>We develop technology companies from inception and partner with exceptional people to acquire and run established businesses through an ETA model.</p>
+    </div>
+  </section>
 
-      <h2>Understanding Entrepreneurial Challenges</h2>
-      <p>Our partners bring strong entrepreneurial backgrounds and understand the immense challenges facing business builders. We seek to help entrepreneurs overcome these challenges to build successful businesses in the United States and abroad.</p>
+  <section id="about" class="content-section">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p>LW Partners is a low-profile group of partners with deep entrepreneurial experience. We invest in companies across the United States and Latin America through technology development and strategic acquisitions.</p>
+    </div>
+  </section>
 
-      <h2>Technology Development</h2>
-      <p>We develop technology companies from inception, providing capital, expertise, and strategic guidance to transform innovative ideas into market-leading enterprises.</p>
+  <section id="focus" class="content-section">
+    <div class="container">
+      <h2>Our Focus</h2>
+      <ul>
+        <li><strong>Entrepreneurship through Acquisition (ETA):</strong> We back entrepreneurs to acquire and operate enduring businesses.</li>
+        <li><strong>Technology Development:</strong> We support new ventures with capital and strategic expertise to build from the ground up.</li>
+      </ul>
+    </div>
+  </section>
 
-      <h2>Entrepreneurial Acquisition</h2>
-      <p>We partner with talented entrepreneurs to acquire and operate established businesses, bringing fresh perspective and entrepreneurial energy to drive growth.</p>
+  <section id="contact" class="content-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:contact@lwpartners.us">contact@lwpartners.us</a></p>
+    </div>
+  </section>
 
-      <blockquote>
-        "We maintain a low profile while delivering exceptional results for our partners and portfolio companies."
-      </blockquote>
-
-      <h2>Partner With Us</h2>
-      <p>We seek exceptional entrepreneurs and established businesses ready for their next chapter of growth.</p>
-
-      <h2>Investment Inquiries</h2>
-      <p>For entrepreneurs and business owners seeking strategic partnership and capital for growth or acquisition opportunities.</p>
-
-      <h2>General Contact</h2>
-      <p>For general inquiries, partnership opportunities, or to learn more about LW Partners.</p>
-
-      <p><strong>Contact:</strong> <a href="mailto:contact@lwpartners.com">contact@lwpartners.com</a></p>
-    </section>
-
-    <footer>
+  <footer>
+    <div class="container">
       <p>© 2025 LW Partners. All rights reserved.</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
