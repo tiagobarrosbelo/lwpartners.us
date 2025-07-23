@@ -221,6 +221,11 @@
       border-top: 1px solid #8EC1CC;
       font-size: 0.9rem;
     }
+
+    html {
+  scroll-behavior: smooth;
+    }
+    
   </style>
 </head>
 <body>
@@ -240,10 +245,10 @@
     <div class="container hero-content">
       <h2>Investing in exceptional companies in the US and abroad</h2>
       <p>We develop technology companies from inception and partner with exceptional people to acquire and run established businesses through an ETA model.</p>
-      <div class="button-group">
-        <button class="btn btn-gold">Our Approach</button>
-        <button class="btn btn-white">Contact Us</button>
-      </div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+      <a href="#approach" class="btn btn-gold">Our Approach</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+       </div>
     </div>
   </section>
 
@@ -256,9 +261,9 @@
     </div>
   </section>
 
-  <section id="focus" class="content-section">
+  <section id="approach" class="content-section">
     <div class="container">
-      <h2>Our Focus</h2>
+      <h2>Our Approach</h2>
       <div class="grid-cards">
 
         <div class="card">
