@@ -4,244 +4,242 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LW Partners – Long-Term Business Builders</title>
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: "Segoe UI", sans-serif;
-      color: #004D65;
-      background: #f3f9fa;
-      line-height: 1.6;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+  body {
+    font-family: "Segoe UI", sans-serif;
+    color: #ffffff;
+    background: #002F3D;
+    line-height: 1.6;
+  }
 
-    header {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px 0;
-      text-align: center;
-      border-bottom: 1px solid #8EC1CC;
-      backdrop-filter: blur(6px);
-    }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-    .logo {
-      font-size: 2rem;
-      font-weight: 600;
-      width: 200px;
-      height: auto;
-      }
-    }
+  header {
+    background: #003b4d;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #005a73;
+    backdrop-filter: blur(6px);
+  }
 
-    nav {
-      margin-top: 10px;
-    }
+  .logo {
+    height: 60px;
+    width: auto;
+  }
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #2E6F80;
-      font-weight: 500;
-    }
+  nav {
+    margin-top: 10px;
+  }
 
-    nav a:hover {
-      color: #004D65;
-    }
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+  }
 
-    #hero {
-      position: relative;
-      background: url("istockphoto-502426696-612x612.jpg") no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
+  nav a:hover {
+    color: #FFD700;
+  }
 
-    .hero-overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 77, 101, 0.55);
-      z-index: 1;
-    }
+  #hero {
+    position: relative;
+    background: url("istockphoto-502426696-612x612.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
 
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
+  .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 47, 61, 0.65);
+    z-index: 1;
+  }
 
-    .hero-content h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
 
-    .hero-content p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    }
+  .hero-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
 
+  .hero-content p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 640px) {
     .button-group {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      justify-content: center;
-      align-items: center;
+      flex-direction: row;
     }
+  }
 
-    @media (min-width: 640px) {
-      .button-group {
-        flex-direction: row;
-      }
-    }
+  .btn {
+    font-size: 1.1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    min-width: 160px;
+    text-align: center;
+  }
 
-    .btn {
-      font-size: 1.1rem;
-      padding: 0.75rem 2rem;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 500;
-      transition: 0.3s ease;
-      min-width: 160px;
-      text-align: center;
-    }
+  .btn-gold {
+    background: linear-gradient(to right, #FFD700, #FFC700);
+    color: #002F3D;
+    box-shadow: 0 2px 4px rgba(255, 215, 0, 0.4);
+    border: none;
+    text-decoration: none;
+  }
 
-    .btn-gold {
-      background: linear-gradient(to right, #FFD700, #FFC700);
-      color: #002F3D;
-      box-shadow: 0 2px 4px rgba(255, 215, 0, 0.4);
-      border: none;
-      text-decoration: none;
-      }
-
-      .btn-gold:hover {
-        opacity: 0.9;
-      }
+  .btn-gold:hover {
+    opacity: 0.9;
+  }
 
   .btn-white {
-      background: #ffffff;
-      color: #002F3D;
-      border: 1px solid #d4d4d4;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-      text-decoration: none;
-    }
-  
-    .btn-white:hover {
-      background: #f6f6f6;
-    }
+    background: #ffffff;
+    color: #002F3D;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    text-decoration: none;
+  }
 
-    .content-section {
-      padding: 60px 0;
-      background: white;
-    }
+  .btn-white:hover {
+    background: #f6f6f6;
+  }
 
-    .content-section h2 {
-      font-size: 1.8rem;
-      text-align: center;
-      margin-bottom: 40px;
-    }
+  .content-section {
+    padding: 60px 0;
+    background: #003645;
+  }
 
-    .content-section p {
-      font-size: 1rem;
-      text-align: center;
-      color: #2E6F80;
-      max-width: 720px;
-      margin: 0 auto;
-    }
+  .content-section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
 
+  .content-section p {
+    font-size: 1rem;
+    text-align: center;
+    color: #d4e9ee;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .grid-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: 768px) {
     .grid-cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 30px;
+      grid-template-columns: 1fr 1fr;
     }
+  }
 
-    @media (min-width: 768px) {
-      .grid-cards {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
+  .card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.4s ease;
+    color: #ffffff;
+  }
 
-    .card {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(6px);
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.4s ease;
-    }
+  .card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
 
-    .card:hover {
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .card-content {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  .icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(to right, #FFD700, #FFC700);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
 
-    .icon-wrapper {
-      width: 48px;
-      height: 48px;
-      background: linear-gradient(to right, #FFD700, #FFC700);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
+  .icon {
+    width: 24px;
+    height: 24px;
+    color: #004D65;
+  }
 
-    .icon {
-      width: 24px;
-      height: 24px;
-      color: #004D65;
-    }
+  .card h3 {
+    font-family: serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+  }
 
-    .card h3 {
-      font-family: serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #004D65;
-      margin-bottom: 0.75rem;
-    }
+  .card p {
+    color: #cce6ec;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 
-    .card p {
-      color: #3c4b55;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
+  footer {
+    background: #002f3d;
+    text-align: center;
+    padding: 20px 0;
+    color: #d4e9ee;
+    border-top: 1px solid #005a73;
+    font-size: 0.9rem;
+  }
 
-    footer {
-      background: #ffffff;
-      text-align: center;
-      padding: 20px 0;
-      color: #2E6F80;
-      border-top: 1px solid #8EC1CC;
-      font-size: 0.9rem;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 
-    html {
-  scroll-behavior: smooth;
-    }
 
-    .logo {
-    height: 50px;
-    width: auto;
-    }
-    
-  </style>
+  
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="logo.jpg" alt="LW Partners" class="logo">
+      <img src="lw logo.jpg" alt="LW Partners" class="logo">
     </div>
   </header>
 
